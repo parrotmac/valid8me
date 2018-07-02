@@ -62,3 +62,9 @@ access-control-allow-origin: *
 - Be warned? Yes.
 - Use it? If you're really careful
 - Contribute? If you wanna
+
+### Feature wishlist:
+- Fine-grained Access-Control-Allow-Origin whitelisting
+- Better LinkedIn spoofing
+- Add moar services
+
