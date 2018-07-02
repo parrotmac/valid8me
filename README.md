@@ -55,7 +55,7 @@ access-control-allow-origin: *
 - `requested_url`: URL request was ultimately performed against
 - `status_code`: Status code from final request
 - `error_message`: Relatively user-friendly error message
--`debug_message`: Technical description of a validation issue
+- `debug_message`: Technical description of a validation issue
 
 
 ### Should I...?
