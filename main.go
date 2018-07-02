@@ -23,15 +23,16 @@ func tryGetEnv(varName string, fallbackValue string) (varValue string) {
 	return fallbackValue
 }
 
-const fbURLRegex = "\\A((?:https?://)?(?:www.)?(?:facebook.com|fb.me|fb.com)(?:[^\\.])(?:/.+)?)"
+const (
+	fbURLRegex = "\\A((?:https?://)?(?:www.)?(?:facebook.com|fb.me|fb.com)(?:[^\\.])(?:/.+)?)"
+ 	linkedInURLRegex = "\\A((?:https?://)?(?:[www.|\\w+)])?(?:linkedin.com|lnkd.in)(?:[^\\.])(?:/.+)?)"
 
-const linkedInURLRegex = "\\A((?:https?://)?(?:[www.|\\w+)])?(?:linkedin.com|lnkd.in)(?:[^\\.])(?:/.+)?)"
+ 	// twitterUsernameRegex = "\\A(?:@?\\w)+\\z"
+	twitterURLFmtStr = "https://twitter.com/%s"
 
-//const twitterUsernameRegex = "\\A(?:@?\\w)+\\z"
-const twitterURLFmtStr = "https://twitter.com/%s"
-
-//const instagramUsernameRegex = "\\A(?:@?[\\w\\.]+)+\\z"
-const instagramURLFmtStr = "https://www.instagram.com/%s/"
+	// instagramUsernameRegex = "\\A(?:@?[\\w\\.]+)+\\z"
+	instagramURLFmtStr = "https://www.instagram.com/%s/"
+)
 
 func (a *App) InitializeRouting() {
 	a.Router = mux.NewRouter()
