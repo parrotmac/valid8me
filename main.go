@@ -25,7 +25,7 @@ func tryGetEnv(varName string, fallbackValue string) (varValue string) {
 
 const (
 	fbURLRegex = "\\A((?:https?://)?(?:www.)?(?:facebook.com|fb.me|fb.com)(?:[^\\.])(?:/.+)?)"
- 	linkedInURLRegex = "\\A((?:https?://)?(?:[www.|\\w+)])?(?:linkedin.com|lnkd.in)(?:[^\\.])(?:/.+)?)"
+ 	linkedInURLRegex = "\\A((?:https?://)?(?:[\\w-]+.)?(?:linkedin.com|lnkd.in)(?:[^\\.])(?:/.+)?)"
 
  	// twitterUsernameRegex = "\\A(?:@?\\w)+\\z"
 	twitterURLFmtStr = "https://twitter.com/%s"
